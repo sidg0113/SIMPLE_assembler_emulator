@@ -1,0 +1,150 @@
+/*****************************************************************************
+TITLE: Claims																																
+AUTHOR: Siddhant Gupta
+Declaration of Authorship
+This txt file, claims.txt, is part of the assignment of CS322 at the 
+department of Computer Science and Engg, IIT Patna . 
+*****************************************************************************/
+
+Files:
+==========
+*All the files i submitted, asm.cpp and emu.cpp and claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the X (eg five)  test examples has also been uploaded. They are test1(3 output files), test2(3 output files), test3
+(1 output file), memcpy(3 output files) and triangle(3 output files). All the test files have been tested and work properly. As for the evidence for the emulator is uploaded
+with two output files, memcpy.txt and triangle.txt.
+
+*Both of my c++ programs did not show any errors with g++.
+
+*Two programs are compilable with g++ with the command g++ -o asm asm.cpp and g++ -o emu emu.cpp.
+
+
+=============================
+Program format and structure:
+=============================
+1. The assembler:
+
+    * with two data structures to store respectively labels and mnemonic table with expected operands.
+    * uses a single routine for both passes.
+    * detects label erros.
+    * consistent and sensible formatting with sensible program structure. 
+    * sensible variable, function & type names with explanatory comments.
+		* advanced listing file.
+		* assembles test programs.
+	  * can implements and demonstrates the instruction SET.
+
+2. The emulator :
+    *with two data structures to store respectively memory, mnemonic table with expected operands
+    * loads object file, 
+    * shows the ISA
+    * by giving the instructions like "-before" "-after" , the program can produce memory dump before/after execution.
+    * by giving the instruction like "-trace", the program prints the result of program executed.
+    * detects errant programs.
+
+
+=============================
+Testing:
+=============================
+
+1. The assembler:
+
+I have tested  seven examples shown as bellow. The errors only occurred in the file test2.asm and 
+the program immediately stopped on the second pass. 
+
+The others were tested without any errors detected and produced three output files, listing file, 
+error log file and machine readable object file, for each example. 
+
+After comparing the listing files and object file of memcpy.asm , memcpy.l, triangle.l memcpy.o 
+with the implemented result given on the assignment, both of them show no difference 
+from those provided( if there is different  that is fine too) 
+ 
+
+1)
+#Input: asm test1.asm
+#Output: 
+a. test1.l 
+b. test1.log (without any error messages)
+c. test1.o
+
+2)
+#Input:asm test2.asm
+#Output: 
+a. test2.l 
+b. test2.log (without error messages shown as below but also in log file)
+c. test2.o
+
+error messages:
+ERROR: Label aldredy declared. line= 4
+WARNING: Incorrect label formating. line = 10
+ERROR: Unkown symbol at line5
+ERROR: Unkown symbol at line6
+ERROR: Expected an operand at line!7
+ERROR: No operand expected at line8
+ERROR: Unkown symbol at line9
+ERROR: Mneominic not defined11
+ERROR: Mneominic not defined12
+
+
+3)
+#Input:asm test3.asm
+#Output: 
+a. test3.l 
+b. test3.log (without any error messages)
+c. test3.o
+
+
+4)
+#Input:asm test4.asm
+#Output: 
+a. test4.l 
+b. test4.log (without any error messages)
+c. test4.o
+
+5)
+#Input:asm test4.asm
+#Output: 
+a. test4.l 
+b. test4.log (without any error messages)
+c. test4.o
+6)
+#Input : asm bubble.asm
+#output:
+a. bubble.l
+b.bubble.log (without any error messages)
+c. test4.o
+7)
+#Input:asm test61.asm
+#Output: 
+a. test61.l 
+b. test61.log (without any error messages)
+c. test61.o
+
+2. The emulator:
+
+I have tested seven examples shown as bellow. The errors only occurred in the file test3.o and 
+the program immediately stopped with an error message on the screen. 
+
+The others were tested without any errors detected and produced excution data both on the screen and 
+output text file for each example according to the usage instruction. 
+
+After running the bin file given, the trace data are the same as 
+the implemented result from my own program.
+
+1)
+#Input:emu -trace test61.o
+#Output: test61.txt
+
+
+2)
+#Input: emu -trace test4.o
+#Output: test4.txt
+
+
+3)
+#Input: emu -trace test3.o
+#Output: Infifnite loop so no output
+
+4) 
+#Input: emu -trace test61.o
+#Input: emu -after test61.o
+#Output: 2 files one by one that will show the required output

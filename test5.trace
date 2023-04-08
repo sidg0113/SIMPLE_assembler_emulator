@@ -1,0 +1,12 @@
+A= 0	B= 0	SP= ffffff	PC= 0
+A= 1	B= 0	SP= ffffff	PC= 2
+A= 0	B= 0	SP= ffffff	PC= 3
+A= c	B= 0	SP= ffffff	PC= 4
+A= 2	B= 0	SP= ffffff	PC= 5
+A= 2	B= 2	SP= ffffff	PC= 6
+A= 8	B= 2	SP= ffffff	PC= 7
+A= b	B= 2	SP= ffffff	PC= 8
+A= d	B= b	SP= ffffff	PC= 9
+A= d	B= b	SP= ffffff	PC= a
+A= 1	B= d	SP= ffffff	PC= b
+A= d	B= d	SP= ffffff	PC= 1

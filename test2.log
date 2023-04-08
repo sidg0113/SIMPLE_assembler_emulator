@@ -1,0 +1,9 @@
+ERROR: Label aldredy declared. line= 4
+WARNING: Incorrect label formating. line = 10
+ERROR: Unkown symbol at line5
+ERROR: Unkown symbol at line6
+ERROR: Expected an operand at line!7
+ERROR: No operand expected at line8
+ERROR: Unkown symbol at line9
+ERROR: Mneominic not defined11
+ERROR: Mneominic not defined12
